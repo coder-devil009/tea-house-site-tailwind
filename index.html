@@ -2,34 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=q">
-    <title>Tea House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/93ea47e651.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=q">
+  <title>Tea House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93ea47e651.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-    <style>
-        .manrope-font {
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-
+  <!-- Main content -->
+  <main class="max-w-screen-xl mx-auto md:px-16 px-5">
+    <header class="lg:flex md:flex ">
+      <div>
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-7">
+          It's good <br>
+          tea time at The <br> Tea House</h1>
+        <p class="text-lg font-medium text-[#777777] mb-7">Tea and Botanical Solutions Supplier Give Optimum <br>
+          Satisfaction To Your Taste Buds.</p>
+        <button class="rounded-xl p-4 text-white bg-gradient-to-r from-[#FF8938] to-[#FF0000]">Explore More <i
+            class="fa-solid fa-arrow-right -rotate-45"></i></button>
+      </div>
+      <div class="relative">
+        <div><img class="w-full" src="./images/banner.png" alt=""></div>
+        <div class="absolute flex items-center rounded-xl shadow-xl shadow-[#rgba(0, 0, 0, 0.06)] 
+        px-4 py-5 ml-28 md:ml-28 lg:ml-44 -mt-16 bg-white">
+          <i class="fa-solid fa-star text-amber-300 mr-4 text-2xl"></i>
+          <div>
+            <h3 class="font-extrabold text-3xl">5.00</h3>
+            <p class="font-semibold text-[#777777]">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </main>
 </body>
 
 </html>
